@@ -10,16 +10,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: black;
-    height: 5vh;
-}
 .container {
     position: relative;
     display: flex;
     max-width: 100%;
     margin: 0 auto;
     align-items: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    height: 5vh;
 }
 
 nav {
@@ -34,4 +37,40 @@ nav > button {
     border: none;
     border-radius: 10px;
     padding: 5px;
+}
+
+/* MAIN */
+
+main > .container {
+    background-color: black;
+    width: 100%;
+    height: 95vh;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.my-row {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my-col-1-7 {
+    position: relative;
+    width: calc((100% / 7) - 20px);
+    margin: 10px;
+}
+
+.username {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
 }
